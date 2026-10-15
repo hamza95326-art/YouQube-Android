@@ -1,0 +1,32 @@
+
+name: Build YouQube APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v6
+
+      - name: Build APK
+        id: build
+        uses: flet-dev/flet-build-action@v1
+        with:
+          target: apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: YouQube-APK
+          path: ${{ steps.build.outputs.archive-path }}
+          if-no-files-found: error
