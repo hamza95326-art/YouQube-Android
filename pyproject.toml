@@ -3,7 +3,7 @@
 name = "youqube"
 version = "1.0.0"
 description = "YouQube Android App"
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.12,<3.15"
 dependencies = [
     
     "flet>=0.80.0",
