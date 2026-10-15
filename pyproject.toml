@@ -5,7 +5,8 @@ version = "1.0.0"
 description = "YouQube Android App"
 requires-python = ">=3.12,<3.14"
 dependencies = [
-    "flet",
+    
+    "flet>=0.80.0",
     "yt-dlp",
 ]
 
