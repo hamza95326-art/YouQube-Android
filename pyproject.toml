@@ -1,0 +1,18 @@
+
+[project]
+name = "youqube"
+version = "1.0.0"
+description = "YouQube Android App"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "flet",
+    "yt-dlp",
+]
+
+[tool.flet]
+org = "com.youqube"
+product = "YouQube"
+
+[tool.flet.app]
+path = "."
+module = "youqube_android"
