@@ -23,8 +23,8 @@ jobs:
         uses: flet-dev/flet-build-action@v1
         with:
           target: apk
-          runner-python-version: "3.14"
-          bundled-python-version: "3.14"
+          runner-python-version: "3.12"
+          bundled-python-version: "3.12"
           cache: false
 
       - name: Upload APK
